@@ -1,0 +1,97 @@
+.rideHeading{
+    text-align: center;
+    padding-inline: 5%;
+    padding-block: 5rem;
+    font-size: 48px;
+}
+.ourService{
+    font-size: 32px;
+}
+.imageBox{
+    flex:1;
+}
+.headBox{
+    font-size: 48px;
+}
+.para{
+    line-height: 2.25rem;
+}
+.paraBox{
+    line-height: 3rem;
+    text-align:center;
+    color:"grey"
+}
+.h1exprience{
+    padding-block: 2rem;
+}
+.footerdiv{
+    padding-block:"3rem";
+    padding-inline:"10rem";
+    display:"flex";
+    justify-content:"start";
+    gap:"5rem"
+}
+.footerend{
+    text-align: end;
+}
+.pexprience{
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    padding-inline: 5rem;
+}
+@media only screen and (max-width: 600px) {
+   .rideHeading{
+    font-size: 24px;
+   }
+   .ourService{
+    font-size: 16px;
+   }
+   .imageBox{
+    flex:auto;
+    width:"320px";
+   }
+   .headBox{
+    font-size: 24px;
+   }
+   .para{
+    line-height: 1.25rem;
+    font-size: 0.9rem;
+   }
+   .paraBox{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align:center;
+}
+.h1exprience{
+    padding-block: 0.5rem;
+}
+.pexprience{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding-inline: 2rem;
+}
+.footerdiv{
+    padding-inline: 3rem;
+    padding-block: 3rem;
+    display:"flex";
+    flex-direction: column;
+    justify-content:"start";
+    gap:"2rem"
+}
+.footerend{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+  }
+
+  .taxicard:hover{
+    background-color: #4C74B9;
+    color:white;
+}
+.taxicardcircle:hover{
+    border-radius: 8px;
+    color: white;
+}
+.taxiheading:hover{
+    color:white;
+}
