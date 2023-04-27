@@ -1,3 +1,4 @@
+window.process = {};
 import Stepper from "@mui/material/Stepper";
 import Button from "@mui/material/Button";
 import Step from "@mui/material/Step";
@@ -13,6 +14,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 const steps = ["Pickup address", "Number of passengers", "Customer details"];
+const GOOGLE_API_KEY = process.env
 const TaxiCard = ({ setAlert, setAlertMessage }) => {
   const [returned, setReturned] = React.useState(false);
   const [page1, setPage1] = useState(true);
@@ -81,7 +83,7 @@ const TaxiCard = ({ setAlert, setAlertMessage }) => {
             style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
           >
             <Autocomplete
-              apiKey="AIzaSyDg9IT_EhGqUxrURI3kVJElN8i96SPhY1Q"
+              apiKey={GOOGLE_API_KEY}
               onPlaceSelected={(place) => {
                 setPickupAddress(place);
               }}
@@ -93,7 +95,7 @@ const TaxiCard = ({ setAlert, setAlertMessage }) => {
               }}
             />
             <Autocomplete
-              apiKey="AIzaSyDg9IT_EhGqUxrURI3kVJElN8i96SPhY1Q"
+              apiKey={GOOGLE_API_KEY}
               onPlaceSelected={(place) => {
                 setDropAddress(place);
               }}
